@@ -1,7 +1,4 @@
-﻿using CSharpTypes.Classes;
-
-Fields person = new Fields(1);
-person.ChangeAge();
-
+﻿using CSharpTypes.Classes.Methods;
+ 
 Console.WriteLine("Hello, World!");
 Console.ReadKey();
