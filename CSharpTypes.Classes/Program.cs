@@ -1,9 +1,7 @@
-﻿using CSharpTypes.Classes.Cunstructors;
+﻿using CSharpTypes.Classes.Constructor;
 
 
 
-Cunstructor cunstructor = new Cunstructor(2);
-
-
-Console.WriteLine(cunstructor.testc().ToString());
+Constructor cunstructor = new Constructor(2);
+ 
 Console.ReadKey();

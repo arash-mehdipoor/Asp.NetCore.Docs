@@ -1,4 +1,4 @@
-﻿namespace CSharpTypes.Classes.Cunstructors
+﻿namespace CSharpTypes.Classes.Constructor
 {
     #region Description
     /// <summary>
@@ -21,18 +21,18 @@
     /// کانستراکتور ها میتونن همدیگر رو هم صدا بزنند
     /// </summary> 
     #endregion
-    public class Cunstructor
+    public class Constructor
     {
         #region Property
         private readonly int _age;
         private static int Counter;
         #endregion 
         #region Cunstructors
-        public Cunstructor() : this(28)
+        public Constructor() : this(28)
         {
 
         }
-        public Cunstructor(int age)
+        public Constructor(int age)
         {
             _age = age;
         }
@@ -45,7 +45,7 @@
         /// زمان اجرای این کانستراکتور ها مشخص نیست اما حتما یکبار و قبل از صدا زدن هرکدوم از فیلدها و پراپرتی ها صدا
         /// زده میشوند
         /// </summary>
-        static Cunstructor()
+        static Constructor()
         {
             Counter = 100;
         }
