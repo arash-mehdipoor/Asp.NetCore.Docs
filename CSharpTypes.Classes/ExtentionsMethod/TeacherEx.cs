@@ -1,7 +1,5 @@
-﻿using CSharpTypes.Classes.ExtentionsMethod;
-
-namespace CSharpTypes.Classes
-{ 
+﻿namespace CSharpTypes.Classes.ExtentionsMethod
+{
     public static class TeacherEx
     {
         #region ExtentionMethod
@@ -15,7 +13,7 @@ namespace CSharpTypes.Classes
         public static string GetFullName(this Teacher teacher)
         {
             return $"{teacher.FirstName} - {teacher.LastName}";
-        } 
+        }
         #endregion
     }
 }
