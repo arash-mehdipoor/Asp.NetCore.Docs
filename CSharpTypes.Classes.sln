@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTypes.Enums", "..\CSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTypes.RefInOut", "..\CSharpTypes.RefInOut\CSharpTypes.RefInOut.csproj", "{8BB1A7EC-44D5-4255-A807-5DB88B42A1FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTypes.Tuples", "..\CSharpTypes.Tupples\CSharpTypes.Tuples.csproj", "{6771FD49-3C3C-49BB-8D5A-37694597000B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{8BB1A7EC-44D5-4255-A807-5DB88B42A1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BB1A7EC-44D5-4255-A807-5DB88B42A1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BB1A7EC-44D5-4255-A807-5DB88B42A1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6771FD49-3C3C-49BB-8D5A-37694597000B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6771FD49-3C3C-49BB-8D5A-37694597000B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6771FD49-3C3C-49BB-8D5A-37694597000B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6771FD49-3C3C-49BB-8D5A-37694597000B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{FD7D446B-7E26-4558-8CDD-3C5733C88A88} = {C36EFF5E-DDAA-447F-AD23-B0B30100A6A3}
 		{44FCC95A-C4C3-4AEE-BB43-6ABB7D5F10FD} = {C36EFF5E-DDAA-447F-AD23-B0B30100A6A3}
 		{8BB1A7EC-44D5-4255-A807-5DB88B42A1FC} = {C36EFF5E-DDAA-447F-AD23-B0B30100A6A3}
+		{6771FD49-3C3C-49BB-8D5A-37694597000B} = {C36EFF5E-DDAA-447F-AD23-B0B30100A6A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D112FEE-2475-47B9-AF41-40BD664C443E}
