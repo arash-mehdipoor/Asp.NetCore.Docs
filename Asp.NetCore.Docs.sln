@@ -3,27 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Classes", "CSharpTypes.Classes\CSharpTypes.Classes.csproj", "{80E94D8A-48A7-4E16-B51F-76E970A0C8E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Classes", "CSharpTypes\CSharpTypes.Classes\CSharpTypes.Classes\CSharpTypes.Classes.csproj", "{80E94D8A-48A7-4E16-B51F-76E970A0C8E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{C36EFF5E-DDAA-447F-AD23-B0B30100A6A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Records", "..\CSharpTypes.Records\CSharpTypes.Records.csproj", "{4EC531E1-00FB-47C5-A521-7031CF98F285}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Records", "CSharpTypes\CSharpTypes.Records\CSharpTypes.Records.csproj", "{4EC531E1-00FB-47C5-A521-7031CF98F285}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Structs", "..\CSharpTypes.Struct\CSharpTypes.Structs.csproj", "{FD7D446B-7E26-4558-8CDD-3C5733C88A88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Structs", "CSharpTypes\CSharpTypes.Struct\CSharpTypes.Structs.csproj", "{FD7D446B-7E26-4558-8CDD-3C5733C88A88}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Enums", "..\CSharpTypes.Enums\CSharpTypes.Enums.csproj", "{44FCC95A-C4C3-4AEE-BB43-6ABB7D5F10FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Enums", "CSharpTypes\CSharpTypes.Enums\CSharpTypes.Enums.csproj", "{44FCC95A-C4C3-4AEE-BB43-6ABB7D5F10FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.RefInOut", "..\CSharpTypes.RefInOut\CSharpTypes.RefInOut.csproj", "{8BB1A7EC-44D5-4255-A807-5DB88B42A1FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.RefInOut", "CSharpTypes\CSharpTypes.RefInOut\CSharpTypes.RefInOut.csproj", "{8BB1A7EC-44D5-4255-A807-5DB88B42A1FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Tuples", "..\CSharpTypes.Tupples\CSharpTypes.Tuples.csproj", "{6771FD49-3C3C-49BB-8D5A-37694597000B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Tuples", "CSharpTypes\CSharpTypes.Tupples\CSharpTypes.Tuples.csproj", "{6771FD49-3C3C-49BB-8D5A-37694597000B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Partials", "..\CSharpTypes.Partials\CSharpTypes.Partials.csproj", "{2E1591FF-B0B8-4668-B7CE-1F77DFB93C23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTypes.Partials", "CSharpTypes\CSharpTypes.Partials\CSharpTypes.Partials.csproj", "{2E1591FF-B0B8-4668-B7CE-1F77DFB93C23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpTypes", "CSharpTypes", "{1809CBA8-75DB-4810-8BBD-9A5C53FAE6E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{32EADFD0-C979-49D3-BEE1-8FB544F1627D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPInCSharp.ClassInheritance", "..\..\OOP\OOPInCSharp.ClassInheritance\OOPInCSharp.ClassInheritance.csproj", "{512ECF00-316B-46F0-838E-FEFDEAF11272}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPInCSharp.ClassInheritance", "OOP\OOPInCSharp.ClassInheritance\OOPInCSharp.ClassInheritance.csproj", "{512ECF00-316B-46F0-838E-FEFDEAF11272}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
