@@ -19,6 +19,7 @@
     ///  به این نکته توجه کنید که ویرچوال قرار دادن سربار داره و اگر واقعا میبینید نیازه استفاده کنید
     /// </summary> 
     #endregion
+
     #region Virtual
     public class Animal
     {

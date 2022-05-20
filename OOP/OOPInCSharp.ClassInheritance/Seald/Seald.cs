@@ -13,6 +13,7 @@
     /// هم اتفاق نمیوفته و پرفورمنس بهتری میگیرم
     /// </summary> 
     #endregion
+
     #region Seald
     public abstract class Person
     {

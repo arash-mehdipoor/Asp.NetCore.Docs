@@ -2,9 +2,7 @@
 
 
 using OOPInCSharp.ClassInheritance.Inheritance;
+using OOPInCSharp.ClassInheritance.Interface;
 
-Child child = new();
 
-child.GetParentName(); 
-
-Console.WriteLine("Hello, World!"); 
+using(MyDisposable testClassInterface = new MyDisposable()) { }

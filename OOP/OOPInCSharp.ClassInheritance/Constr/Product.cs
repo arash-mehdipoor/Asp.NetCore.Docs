@@ -8,6 +8,7 @@
     /// base حتما ورودی و بهش پاس بدیم
     /// </summary> 
     #endregion
+
     #region Constructor
     public class Product
     {
