@@ -1,6 +1,7 @@
 ﻿
 
 
+using OOPInCSharp.ClassInheritance.DefultInterface;
 using OOPInCSharp.ClassInheritance.ExplicitVsImplicitInterfaces;
 using OOPInCSharp.ClassInheritance.Interface;
 
@@ -30,4 +31,10 @@ ExplicitInterfaceClass explicitInterfaceClass = new();
 ExplicitInterface explicitInterface = explicitInterfaceClass;
 explicitInterface.Test();
 explicitInterface.Temp();
+#endregion
+#region DefultInterface
+// چون براش پیاده سازی در این کلاس ندارم میره از پیاده سازی پیشفرض استفاده میکنه  و ارور تولید میشه
+DefultInterface defultInterface = new();
+ILog log = defultInterface;
+log.Log("message");
 #endregion
