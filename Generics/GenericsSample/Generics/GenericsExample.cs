@@ -27,6 +27,8 @@
     {
         public string GenericsConcat(Tinput input1, Tinput input2)
         {
+            var defultValue = default(Tinput);
+
             var value1 = input1.ToString();
             var value2 = input2.ToString();
 
