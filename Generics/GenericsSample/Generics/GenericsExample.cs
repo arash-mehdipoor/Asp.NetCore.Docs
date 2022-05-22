@@ -27,6 +27,9 @@
     {
         public string GenericsConcat(Tinput input1, Tinput input2)
         {
+            #region DefultValue
+            // بسته به تایپی که بهش بدیم مقدار دیفالتش رو ست میکنه مقلا برای اینتیجر عدد صفر 
+            #endregion
             var defultValue = default(Tinput);
 
             var value1 = input1.ToString();
