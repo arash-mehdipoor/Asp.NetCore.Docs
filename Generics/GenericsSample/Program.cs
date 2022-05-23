@@ -33,4 +33,12 @@ Console.WriteLine(StaticMember<string>.Counter); // 12
 Console.WriteLine(StaticMember<bool>.Counter); // 15
 #endregion
 
+#region GenericMethod
+
+GenericMethod genericMethod = new();
+genericMethod.Print<int>(1);
+genericMethod.Print<string>("1");
+genericMethod.Print<bool>(true);
+#endregion
+
 Console.WriteLine("Hello, World!");

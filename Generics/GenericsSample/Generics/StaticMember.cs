@@ -7,8 +7,11 @@
     /// </summary>
     /// <typeparam name="T"></typeparam> 
     #endregion
+
+    #region StaticMember
     public class StaticMember<T>
     {
         public static int Counter;
-    }
+    } 
+    #endregion
 }
