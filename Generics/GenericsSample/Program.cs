@@ -4,6 +4,7 @@
 
 
 using GenericsSample.Generics;
+using GenericsSample.Models;
 
 #region GenericsSample
 GenericsExample<int> genericsInt = new();
@@ -22,5 +23,14 @@ Console.WriteLine(genericsperson.GenericsConcat(
 
 #endregion
 
+#region StaticMember
+StaticMember<int>.Counter = 10;
+StaticMember<string>.Counter = 12;
+StaticMember<bool>.Counter = 15;
+
+Console.WriteLine(StaticMember<int>.Counter); // 10
+Console.WriteLine(StaticMember<string>.Counter); // 12
+Console.WriteLine(StaticMember<bool>.Counter); // 15
+#endregion
 
 Console.WriteLine("Hello, World!");

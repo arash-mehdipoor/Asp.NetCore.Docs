@@ -1,4 +1,4 @@
-﻿namespace GenericsSample.Generics
+﻿namespace GenericsSample.Models
 {
     public class Person
     {
