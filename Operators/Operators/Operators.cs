@@ -95,5 +95,18 @@ namespace Operators
             }
         }
         #endregion
+
+        #region SizeOf
+        /// <summary>
+        /// بهمون میگه چند بایت حافظه رو اینها اشغال میکنند
+        /// </summary>
+        public void SizeOf()
+        {
+            Console.WriteLine(sizeof(int));
+            Console.WriteLine(sizeof(byte));
+            Console.WriteLine(sizeof(bool));
+            Console.WriteLine(sizeof(long));
+        }
+        #endregion
     }
 }
