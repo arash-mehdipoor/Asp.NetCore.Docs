@@ -36,4 +36,8 @@ operators.CheckAs(teacher);
 operators.TypeOf();
 #endregion
 
+#region NameOf
+operators.NameOf();
+#endregion
+
 Console.WriteLine("Hello, World!");
