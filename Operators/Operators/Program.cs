@@ -32,4 +32,8 @@ operators.CheckAs(strudent);
 operators.CheckAs(teacher);
 #endregion
 
+#region TypeOf
+operators.TypeOf();
+#endregion
+
 Console.WriteLine("Hello, World!");

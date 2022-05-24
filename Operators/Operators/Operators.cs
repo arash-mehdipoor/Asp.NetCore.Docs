@@ -108,5 +108,27 @@ namespace Operators
             Console.WriteLine(sizeof(long));
         }
         #endregion
+
+        #region TypeOf
+        /// <summary>
+        /// یک تایپ رو از ما میگیره و متادیتاهای مخصوص به اون رو به ما میده
+        /// یک تایپ دریافت میکنم عملا که یک عالمه متادیتا رو از اون نوع خاصی که بهش دادیم بهمون میده
+        /// توی رفلکشن بشدت از این مورد استفاده میشه
+        /// </summary>
+        public void TypeOf()
+        {
+            var type = typeof(Person);
+            Console.WriteLine(type.Assembly);
+            Console.WriteLine(type.AssemblyQualifiedName);
+            Console.WriteLine(type.Namespace);
+            Console.WriteLine(type.Name);
+            Console.WriteLine(type.FullName);
+
+            foreach (var item in type.GetProperties())
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+        #endregion
     }
 }
