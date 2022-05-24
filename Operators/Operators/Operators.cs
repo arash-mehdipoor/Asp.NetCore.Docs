@@ -145,5 +145,17 @@ namespace Operators
             Console.WriteLine(nameof(OperatorsExample));
         }
         #endregion
+
+        #region Indexer
+        /// <summary>
+        /// وقتی ما  مجموعه ای از اشیاء رو داریم ایندکس میتونه بهمون کمک کنه که یک مورد خاص رو بین
+        /// این اشیاء پیدا بکنیم
+        /// با علامت []
+        /// </summary>
+        public void Indexer()
+        {
+
+        }
+        #endregion
     }
 }
