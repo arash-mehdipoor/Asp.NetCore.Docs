@@ -175,5 +175,22 @@ namespace Operators
             Console.WriteLine(person?.FirstName);
         }
         #endregion
+
+        #region OperatorOverloading
+        public class Money
+        {
+            private readonly int _value;
+
+            public Money(int value)
+            {
+                _value = value;
+            }
+            public int Value { get { return _value; } }
+
+            public static Money operator +(Money right, Money left) => new Money(right.Value + left.Value);
+
+        }
+
+        #endregion
     }
 }
