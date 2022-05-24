@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+
+
+using TypeCasting;
+
+#region TypeCasting
+TypeCastingExample typeCastingExample = new(); 
+typeCastingExample.ExplecitConversion(); 
+#endregion
+
 Console.WriteLine("Hello, World!");

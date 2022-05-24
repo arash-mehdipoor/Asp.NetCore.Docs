@@ -1,6 +1,6 @@
 ﻿namespace TypeCasting
 {
-    public class TypeCasting
+    public class TypeCastingExample
     {
         #region ImplicitCasting
         #region Description
@@ -37,9 +37,10 @@
         #endregion
         public void ExplecitConversion()
         {
-            int a = 100;
+            int a = 255;
             // اینجا به وضوح بهش میگم که من میخوام این تبدیل انجام بشه حتی به قیمت از دست دادن دیتا
             byte b = (byte)a;
+            Console.WriteLine(b);
         }
         #endregion
     }
