@@ -157,5 +157,23 @@ namespace Operators
 
         }
         #endregion
+
+        #region OperatorsNull
+        public void OperatorsNull01()
+        {
+            int? a = null;
+            int b = a ?? 0;
+            b = a == null ? 0 : a.Value;
+        }
+
+        /// <summary>
+        /// اول چک میکنه ببینه اگر پرسون نال نباشه بعد میره سراغ فرست نیمش
+        /// </summary>
+        /// <param name="person"></param>
+        public void OperatorsNull02(Person person)
+        {
+            Console.WriteLine(person?.FirstName);
+        }
+        #endregion
     }
 }
