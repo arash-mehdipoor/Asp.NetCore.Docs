@@ -147,11 +147,47 @@ namespace Operators
         #endregion
 
         #region Indexer
+        #region Description
         /// <summary>
         /// وقتی ما  مجموعه ای از اشیاء رو داریم ایندکس میتونه بهمون کمک کنه که یک مورد خاص رو بین
         /// این اشیاء پیدا بکنیم
         /// با علامت []
-        /// </summary>
+        /// حالا اگه آرایه باشه از صفر تا هر تعدادی که عضو داره اگر دیکشنری باشه بستگی داره کلید ایندکسرمون
+        /// رو از چه جنسی تعریف کردیم
+        /// یه زمانی توی اپلیکیشن خودتون یک کلاسی دولوپ میکنید که این کلاستون خودش یک کالکشنی از یک کلاس دیگست
+        /// یا خودش بصورت یک کالکشن داره عمل میکنه تو این شرایط ممکنه که شما بخواهید عملکردی که از کلاستون بروز میدید
+        /// دقیقا مثل آرایه ها باشه و بقیه بتونن بیان به کمک ایندکسر باهاش کار بکنن یعنی نیاد براش متدهای مختلفتی
+        /// بنویسید برای اد کردن ریمو کردن برا ست کردن مقدار برای خوندن مقدار،بلکه میخواید بصورت آرایه باهاش کار بکنید
+        /// تو این شرایط میرید سراغ ایندکسر 
+        /// میتونید از دیتا تایپهای متفاوتی برای ایندکسرتون استفاده بکنید
+        /// </summary> 
+        #endregion
+
+        public class Wallet
+        {
+            private readonly List<Money> moneies = new List<Money>();
+
+            public Money this[int index]
+            {
+                get
+                {
+                    return moneies[index];
+                }
+                set
+                {
+                    if (moneies.Count > index)
+                    {
+                        moneies[index] = value;
+                    }
+                    else
+                    {
+                        moneies.Add(value);
+                    }
+                }
+            }
+
+        }
+
         public void Indexer()
         {
 
@@ -189,8 +225,7 @@ namespace Operators
 
             public static Money operator +(Money right, Money left) => new Money(right.Value + left.Value);
 
-        }
-
-        #endregion
+        } 
+        #endregion 
     }
 }

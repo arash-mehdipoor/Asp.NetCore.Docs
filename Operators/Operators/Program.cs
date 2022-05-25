@@ -49,6 +49,19 @@ Money money03 = money01 + money02;
 
 Console.WriteLine(money03.Value);
 Console.ReadKey();
+#endregion 
+
+#region Indexer
+
+Wallet wallet = new Wallet();
+
+wallet[0] = new Money(1000);
+wallet[1] = new Money(2000);
+wallet[10] = new Money(2000);
+
+Console.WriteLine(wallet[0]);
+Console.WriteLine(wallet[1]);
+
 #endregion
 
 Console.WriteLine("Hello, World!");
