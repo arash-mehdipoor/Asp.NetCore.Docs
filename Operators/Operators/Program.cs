@@ -41,7 +41,7 @@ operators.TypeOf();
 operators.NameOf();
 #endregion
 
-#region OperatorOverloading
+#region OperatorOverloadingAndMultipleCast
 Money money01 = new Money(100000);
 Money money02 = new Money(200000); 
 Money money04 = money01 + money02; 
@@ -49,7 +49,23 @@ Console.WriteLine(money04.Value);
 
 // User Defined Conversion
 Money money03 = 200000;
+
+
+#region MultipleCast
+/// <summary>
+/// الان کامپایلر میدونه که میتونه مانی رو تبدیل بکنه به بایت
+/// اما تایپ کستینگی برای اینکه مانی رو تبدیل بکنی به این ندارن(کامنت کردم)
+/// اما بستر اجرایی من میدونه که بدون هیچ مشکلی میتونه بایت رو تبدیل بکنه به اینتیجر 
+/// بنابراین خطا نمیده بلکه توی آی ال کدی که تولید میکنه اول مانی رو تبدیل میکنه به بایت
+/// از بایت تبدیل میکنه به اینتیجر
+/// و اینجاست که مالتی پل کست اتفاق افتاده
+/// پس این اتفاق که مجموعه ای از کستینگ ها باهم جمع میشوند تا یک تایپی رو تبدیل بکنند به یک تایپ دیگه بدون اینکه کستینگی
+/// بطور مستقیم ازش وجود داشته باشه اصطلاحا بهش میگیم مالتی پل کست
+/// </summary>
 int a = new Money(1);
+
+byte b = new Money(2); 
+#endregion
 
 Console.ReadKey();
 #endregion 

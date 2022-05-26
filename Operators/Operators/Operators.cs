@@ -241,13 +241,31 @@ namespace Operators
             #endregion
             // تبدیل مانی به اینت
             // هرجا که میخوای اینت استفاده کنی میتونی بهش مانی بدی
-            public static implicit operator int(Money value) => value.Value;
+            //public static implicit operator int(Money value) => value.Value;
 
             // تبدیل اینت به مانی
             // هرجا که میخوای مانی استفاده کنی بجاش میتونی اینت بزاری
             public static implicit operator Money(int value) => value;
+
+            // تبدیل اینت به مانی
+            // هرجا که میخوای مانی استفاده کنی بجاش میتونی اینت بزاری
+            public static implicit operator byte(Money value) => (byte)value.Value;
             #endregion  
         }
-        #endregion 
+        #endregion
+
+        #region MultipleCast
+        /// <summary>
+        /// دات نت و کامپایلرش صرفا به اون کست های مستقیمی که ما نوشتیم وابسته نیست یعنی شما ممکنه که یکتاپ کستینگ نوشته باشید از یک تایپی
+        /// به یک تایپ دیگه و یه زمانی بخواید تایپ اصلیتون رو تبدیل بکنید به یه تایپ سومی و اصلا کستینگی براش انجام نداده باشید
+        /// احتمالا فکر میکنید که باید خطا دریافت بکنید اما اینطوری نیست کامپایلر قبل اینکه بخواد به شما خطا بده میگرده بین تمام کستهایی که داره
+        ///  ببینه میتونه راهکاری پیدا بکنه که بدون این خطا بده، بتونه کستینگ رو انجام بده یا نه
+        ///  میره سراغ مولتی کست
+        /// </summary>
+        public void MultipleCast()
+        {
+
+        }
+        #endregion
     }
 }
