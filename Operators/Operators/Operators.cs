@@ -212,7 +212,7 @@ namespace Operators
         }
         #endregion
 
-        #region OperatorOverloading
+        #region OperatorOverloadingAndUserDefinedConversion
         public class Money
         {
             private readonly int _value;
@@ -223,9 +223,31 @@ namespace Operators
             }
             public int Value { get { return _value; } }
 
-            public static Money operator +(Money right, Money left) => new Money(right.Value + left.Value);
+            public static Money operator +(Money right, Money left) => new Money(right.Value + left.Value); 
 
-        } 
+            #region UserDefinedConversion
+            #region Description
+            /// <summary>
+            /// ما به عنوان دولوپر میتونیم تایپهای اختصاصی خودمون رو دولوپ کنیم کلاس بنویسیم استراکچر ایجاد کنیم
+            /// واین ها همشون تایپ هستن،یه زمانایی ممکنه این تایپها رو بخوایم به هم تبدیل بکینم تایپ پرنت به چایلد ،چایلد به پرنت
+            /// یا نه ،دوتا تایپ متفاوت مثلا کلاس متر دارید کلاس فوت دارید ،یا کیلومتر دارید و مایل دارید و میخواید این رو بهم تبدیل بکنیم
+            /// یا مثلا کلاس مانی رو بریزیم توی عدد یا برعکس تو این شرایط میتونیم خودمون برای خودمو تایپ کستینگ انجام بدیم 
+            /// User Defined Conversion
+            /// داشته باشیم تبدیل انواع شخصی سازی شده رو داشته باشیم که تو این فرایند باز میتونم ایمپلیسیت یا اکسپلیسیت کار رو انجام بدیم و باز باید
+            /// توجه بکنیم اگر تایپی که داریم کست میکنیم دیتا احتمال از دست دادنش هست ،اکسپلیسیت انجام میدیم اگه نه ایمپلیسیت این کارو انجام میدیم
+            /// 
+            /// </summary>
+
+            #endregion
+            // تبدیل مانی به اینت
+            // هرجا که میخوای اینت استفاده کنی میتونی بهش مانی بدی
+            public static implicit operator int(Money value) => value.Value;
+
+            // تبدیل اینت به مانی
+            // هرجا که میخوای مانی استفاده کنی بجاش میتونی اینت بزاری
+            public static implicit operator Money(int value) => value;
+            #endregion  
+        }
         #endregion 
     }
 }

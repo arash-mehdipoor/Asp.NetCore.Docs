@@ -43,11 +43,14 @@ operators.NameOf();
 
 #region OperatorOverloading
 Money money01 = new Money(100000);
-Money money02 = new Money(200000);
+Money money02 = new Money(200000); 
+Money money04 = money01 + money02; 
+Console.WriteLine(money04.Value);
 
-Money money03 = money01 + money02;
+// User Defined Conversion
+Money money03 = 200000;
+int a = new Money(1);
 
-Console.WriteLine(money03.Value);
 Console.ReadKey();
 #endregion 
 
