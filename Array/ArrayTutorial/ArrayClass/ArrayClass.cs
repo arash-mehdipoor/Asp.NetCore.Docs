@@ -1,4 +1,6 @@
-﻿namespace ArrayTutorial.ArrayClass
+﻿using System.Collections;
+
+namespace ArrayTutorial.ArrayClass
 {
     /// <summary>
     /// تمام مواردی که تا به اینجا گفته شد  میاد در پشت صحنه از امکانات کلاس ارری استقاده میشه
@@ -107,7 +109,29 @@
             {
                 throw new NotImplementedException();
             }
-        } 
+        }
+        #endregion
+
+        #region Enumrator
+        /// <summary>
+        /// ما به دو روش میتونیم یک آرایه رو پیمایش کنیم یکی : فور و دیگی فورایچ،شما توی فور میدونید طول آرایه چقدره ولی توی فورایچ
+        /// نمیدونید ،پس فور ایچ از کجا میدونه که باید از کجا شروع به پیمایش کنه و تا کجا ادامه بده،
+        /// این کار رو با اینامریتورها انجام میده،
+        /// با استفاده از  : MoveNext()
+        /// که اگه ترو بده میفهمه که باید پیمایش کنه و مقدار فعلی هم داخل کارنت ریخته میشه
+        /// </summary>
+        public void Enumrator()
+        {
+            int[] a = new int[] { 1, 2, 3, 4, 5 };
+            
+           var e = a.GetEnumerator();
+
+            // تا زمانی که مو نکس ترو برگردونه مقدار فعلی در داخل کارنت قرار میگیره و توی کنسول چاپ میشه
+            while (e.MoveNext())
+            {
+                Console.WriteLine(e.Current);
+            }
+        }
         #endregion
     }
 }
