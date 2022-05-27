@@ -123,8 +123,8 @@ namespace ArrayTutorial.ArrayClass
         public void Enumrator()
         {
             int[] a = new int[] { 1, 2, 3, 4, 5 };
-            
-           var e = a.GetEnumerator();
+
+            var e = a.GetEnumerator();
 
             // تا زمانی که مو نکس ترو برگردونه مقدار فعلی در داخل کارنت قرار میگیره و توی کنسول چاپ میشه
             while (e.MoveNext())
@@ -132,6 +132,51 @@ namespace ArrayTutorial.ArrayClass
                 Console.WriteLine(e.Current);
             }
         }
+        #endregion
+
+        #region RangeVsHat
+        /// <summary>
+        /// رنج و هت دوتا عملگر هستن که کمک میکنند که ما بتونیم با آرایه ها هم کار بکنیم
+        /// هت : وقتی میخواهیم راجب هت بگیم باید بریم سراغ ایندکس : ایندکس برای ما چیکار میکرد؟ این امکان روفراهم میکرد که به اعضای یک آرایه به ترتیب
+        /// دسترسی پیدا بکنیم از ابتدا تا انتها،هت میاد معکوسش میکنیه یعنی از انتها به ابتدا دسترسی پیدا میکنیم
+        /// </summary>
+        public void Hat()
+        {
+            int[] a = new[] { 1, 2, 3, 4 };
+            Console.WriteLine(a[0]);
+            Console.WriteLine(a[1]);
+            Console.WriteLine(a[^1]);
+            Console.WriteLine(a[^2]);
+            Console.ReadKey();
+        }
+
+        public void Range()
+        {
+            int[] a = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            // در این مثال مقدار 0 اینکلسیو هستش یعنی مقدار ایندکس صفر هم جزش باشه ولی مقدار دوم که 4 هستش اکسکلوسیو هستش یعنی
+            // چهار جزش نباشه و نمایش داده نشه
+            // inclusive Vs exclusive
+
+            var e = a[0..4]; // 1,2,3,4
+
+            foreach (var item in e)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public void HatAndRange()
+        {
+            int[] a = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; 
+            var e = a[^4..^1]; // 6,7,8
+
+            foreach (var item in e)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
         #endregion
     }
 }

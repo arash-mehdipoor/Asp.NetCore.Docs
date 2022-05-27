@@ -2,6 +2,7 @@
 
 
 
+using ArrayTutorial.ArrayClass;
 using static ArrayTutorial.ArrayClass.ArrayClass;
 
 #region Comparable
@@ -47,6 +48,13 @@ static Person GetOldest(Person person1, Person person2, Person person3)
     return oldest;
 }
 
+#endregion
+
+#region HatvsRange
+ArrayClass arrayClass = new ArrayClass();
+arrayClass.Hat();
+arrayClass.Range();
+arrayClass.HatAndRange();
 #endregion
 
 Console.WriteLine("Hello, World!");
