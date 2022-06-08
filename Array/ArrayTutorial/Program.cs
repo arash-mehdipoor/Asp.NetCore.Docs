@@ -1,43 +1,45 @@
-﻿using ArrayTutorial.BitArraySample;
+﻿using ArrayTutorial.ArrayClass;
+using ArrayTutorial.BitArraySample;
+using static ArrayTutorial.ArrayClass.ArrayClass;
 
 #region comparable
 
-person person1 = new person { firstname = "john", lastname = "smith", age = 21 };
-person person2 = new person { firstname = "mark", lastname = "logan", age = 19 };
-person person3 = new person { firstname = "luke", lastname = "adams", age = 20 };
+Person person1 = new Person { FirstName  = "john", LastName = "smith", Age = 21 };
+Person person2 = new Person { FirstName  = "mark", LastName = "logan", Age = 19 };
+Person person3 = new Person { FirstName  = "luke", LastName = "adams", Age = 20 };
 
-person youngest = getyoungest(person1, person2, person3);
-person oldest = getoldest(person1, person2, person3);
+Person youngest = getyoungest(person1, person2, person3);
+Person oldest = getoldest(person1, person2, person3);
 
-console.writeline("the youngest person is {0} {1}.",
-    youngest.firstname, youngest.lastname);
-console.writeline("the oldest person is {0} {1}.",
-    oldest.firstname, oldest.lastname);
-console.readkey();
+Console.WriteLine("the youngest person is {0} {1}.",
+    youngest.FirstName, youngest.LastName);
+Console.WriteLine("the oldest person is {0} {1}.",
+    oldest.FirstName, oldest.LastName);
+Console.ReadKey();
 
 
 
-static person getyoungest(person person1, person person2, person person3)
+static Person getyoungest(Person person1, Person person2, Person person3)
 {
-    person youngest = person1;
+    Person youngest = person1;
 
-    if (person2.compareto(youngest) == -1)
+    if (person2.CompareTo(youngest) == -1)
         youngest = person2;
 
-    if (person3.compareto(youngest) == -1)
+    if (person3.CompareTo(youngest) == -1)
         youngest = person3;
 
     return youngest;
 }
 
-static person getoldest(person person1, person person2, person person3)
+static Person getoldest(Person person1, Person person2, Person person3)
 {
-    person oldest = person1;
+    Person oldest = person1;
 
-    if (person2.compareto(oldest) == 1)
+    if (person2.CompareTo(oldest) == 1)
         oldest = person2;
 
-    if (person3.compareto(oldest) == 1)
+    if (person3.CompareTo(oldest) == 1)
         oldest = person3;
 
     return oldest;
@@ -46,10 +48,10 @@ static person getoldest(person person1, person person2, person person3)
 #endregion
 
 #region hatvsrange
-arrayclass arrayclass = new arrayclass();
-arrayclass.hat();
-arrayclass.range();
-arrayclass.hatandrange();
+ArrayClass arrayclass = new ArrayClass();
+arrayclass.Hat();
+arrayclass.Range();
+arrayclass.HatAndRange();
 #endregion
 
 #region BitArray 
