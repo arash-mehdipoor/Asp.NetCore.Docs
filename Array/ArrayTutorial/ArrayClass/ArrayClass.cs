@@ -169,7 +169,7 @@ namespace ArrayTutorial.ArrayClass
 
         public void HatAndRange()
         {
-            int[] a = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; 
+            int[] a = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             var e = a[^4..^1]; // 6,7,8
 
             foreach (var item in e)
@@ -195,7 +195,7 @@ namespace ArrayTutorial.ArrayClass
         /// استتفاده بکنه و عملکرد سیستم رو بهبود ببخشه 
         /// </summary> 
         #endregion
-         
+
         public void ArrayPool()
         {
             // maxArrayLength : 
@@ -205,7 +205,7 @@ namespace ArrayTutorial.ArrayClass
             // مثلا 10 تا آرایه با طول 10 یا 20 تا آرایه با طول 20 یا 10 آرایه با طول 50
             // اینکه این دسته بندی بر اساس طول آرایه ها اتفاق میوفته  ما اصطلاحا بهش میگیم باکت و میگه چه تعداد آرایه میخوای تو هر باکت قرار بدی  اگه بزاری
             // ده یعنی تو هر بسته ده تا
-            ArrayPool<int> arrayPool = ArrayPool<int>.Create();
+            ArrayPool<int> arrayPool = ArrayPool<int>.Create(maxArrayLength: 16, maxArraysPerBucket: 3);
 
             var arr = arrayPool.Rent(16);
 
@@ -220,7 +220,7 @@ namespace ArrayTutorial.ArrayClass
 
             // اینجا بهش میگم میخوام آرایه رو بهت برگردونم،یک گزینه دیگه داره  میگه آرایه ای که بهم دادی خالیش بکنم یا نه
             arrayPool.Return(arr);
-        }  
+        }
         #endregion
     }
 }
