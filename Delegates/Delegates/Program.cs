@@ -20,4 +20,9 @@ var result = myDelegate.Invoke(person);
 Console.WriteLine(result);
 #endregion
 
+#region Func
+PersonPrinter personPrinter02 = new();
+personPrinter02.PrintForFunc(PersonFullName.GetPersonFullName, person); 
+#endregion
+
 Console.WriteLine("Hello, World!");
