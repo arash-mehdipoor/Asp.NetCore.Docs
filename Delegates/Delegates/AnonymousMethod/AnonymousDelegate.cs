@@ -23,6 +23,10 @@ namespace Delegates.AnonymousMethod
 
             personTostring.Invoke(person1);
         }
+
+        /// <summary>
+        /// انونیموس متد فرمتش چاق بود یعنی یک عالمه پرانتز و آکولاد بازو بسته و فلان،برای حل این مشکل مایکروسافت لامبدا اکسپرژن رو معرفی کرد که فرمت خلاصه تری هستش
+        /// </summary>
         public void AnonymousMethodSample02()
         {
             Func<int, string> func = x => $"{x}";
