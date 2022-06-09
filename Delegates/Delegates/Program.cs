@@ -2,6 +2,7 @@
 
 using Delegates.AnonymousMethod;
 using Delegates.Delegate;
+using Delegates.LamdaExpression;
 using Delegates.MultiCastDelegate;
 
 #region Delegate
@@ -35,7 +36,12 @@ functions.TestMultiCastDelegateExeptionHandle();
 
 #region AnonymousMethod
 AnonymousMethod anonymous = new();
-anonymous.AnonymousMethodSample01(); 
+anonymous.AnonymousMethodSample();
+#endregion
+
+#region LamdaExpression
+LamdaExpression lamdaExpression = new();
+lamdaExpression.LamdaExpressionTest();
 #endregion
 
 Console.WriteLine("Hello, World!");
