@@ -1,5 +1,6 @@
 ﻿
 
+using Delegates.AnonymousMethod;
 using Delegates.Delegate;
 using Delegates.MultiCastDelegate;
 
@@ -30,6 +31,11 @@ personPrinter02.PrintForFunc(PersonFullName.GetPersonFullName, person);
 Console.WriteLine("".PadLeft(100,'-').ToString());
 Functions functions = new Functions();
 functions.TestMultiCastDelegateExeptionHandle();
+#endregion
+
+#region AnonymousMethod
+AnonymousMethod anonymous = new();
+anonymous.AnonymousMethodSample01(); 
 #endregion
 
 Console.WriteLine("Hello, World!");
