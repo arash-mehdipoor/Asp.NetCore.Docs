@@ -1,6 +1,7 @@
 ﻿
 
 using Delegates.Delegate;
+using Delegates.MultiCastDelegate;
 
 #region Delegate
 PersonPrinter personPrinter = new();
@@ -22,7 +23,13 @@ Console.WriteLine(result);
 
 #region Func
 PersonPrinter personPrinter02 = new();
-personPrinter02.PrintForFunc(PersonFullName.GetPersonFullName, person); 
+personPrinter02.PrintForFunc(PersonFullName.GetPersonFullName, person);
+#endregion
+
+#region MultiCastDelegate
+Console.WriteLine("".PadLeft(100,'-').ToString());
+Functions functions = new Functions();
+functions.TestMultiCastDelegateExeptionHandle();
 #endregion
 
 Console.WriteLine("Hello, World!");
