@@ -1,7 +1,9 @@
 ﻿
 
 using Delegates.AnonymousMethod;
+using Delegates.Closure;
 using Delegates.Delegate;
+using Delegates.Event;
 using Delegates.LamdaExpression;
 using Delegates.MultiCastDelegate;
 
@@ -42,6 +44,18 @@ anonymous.AnonymousMethodSample();
 #region LamdaExpression
 LamdaExpression lamdaExpression = new();
 lamdaExpression.LamdaExpressionTest();
+#endregion
+
+#region Closure
+Closure closure = new();
+closure.ClosureMethod();
+#endregion
+
+#region Event
+Teacher teacher = new("Arash", "Mehdipour");
+TeacherChangeNameLogger teacherChangeNameLogger = new TeacherChangeNameLogger();
+teacher.TeacherNameChanged += teacherChangeNameLogger.Log;
+teacher.SetName("NewNameArash");
 #endregion
 
 Console.WriteLine("Hello, World!");
