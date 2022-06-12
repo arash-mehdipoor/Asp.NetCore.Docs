@@ -1,6 +1,7 @@
 ﻿
 
 using Collections.Lists;
+using Collections.Queue;
 
 #region List
 
@@ -34,6 +35,32 @@ list.AddMember("6");
 list.PrintCapacity(); // 8
 list.PrintCount(); // 6
 
+#endregion
+
+#region Queue
+QueueSample queue = new QueueSample();
+queue.Enquue("2"); 
+queue.Enquue("1");
+queue.Enquue("3");
+
+Console.WriteLine("_".PadLeft(20,'_'));
+queue.Count(); // 3
+Console.WriteLine("_".PadLeft(20, '_'));
+
+queue.Peek(); // 2
+queue.Peek(); // 2
+queue.Peek(); // 2
+Console.WriteLine("_".PadLeft(20, '_'));
+
+queue.Dequeue(); // 2
+queue.Dequeue(); // 1
+queue.Dequeue(); // 3
+
+Console.WriteLine("_".PadLeft(20, '_'));
+queue.Count(); // 0
+Console.WriteLine("_".PadLeft(20, '_'));
+
+queue.PriorityQueue();
 #endregion
 
 Console.ReadKey();
