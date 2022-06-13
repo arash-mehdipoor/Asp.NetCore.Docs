@@ -2,6 +2,7 @@
 
 using Collections.Lists;
 using Collections.Queue;
+using Collections.Stack;
 
 #region List
 
@@ -61,6 +62,18 @@ queue.Count(); // 0
 Console.WriteLine("_".PadLeft(20, '_'));
 
 queue.PriorityQueue();
+#endregion
+
+#region Stack
+StackSample stack = new StackSample();
+stack.Push("3");
+stack.Push("1");
+stack.Push("2");
+Console.WriteLine("_".PadLeft(10, '_'));
+stack.Pop();
+stack.Pop();
+stack.Pop();
+
 #endregion
 
 Console.ReadKey();
