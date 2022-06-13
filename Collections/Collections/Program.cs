@@ -1,5 +1,6 @@
 ﻿
 
+using Collections.ImmutableCollection;
 using Collections.Lists;
 using Collections.Queue;
 using Collections.Sets;
@@ -97,6 +98,12 @@ setSample.Add("2");
 setSample.Print();
 Console.WriteLine("_".PadLeft(10), '_');
 setSample.Operators();
+#endregion
+
+#region ImmutableCollection
+Console.WriteLine("_".PadLeft(10), '_');
+ImmutableCollection immutableCollection = new ImmutableCollection();
+immutableCollection.Test(); 
 #endregion
 
 Console.ReadKey();
