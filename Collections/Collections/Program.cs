@@ -2,6 +2,7 @@
 
 using Collections.Lists;
 using Collections.Queue;
+using Collections.SortedList;
 using Collections.Stack;
 
 #region List
@@ -74,6 +75,14 @@ stack.Pop();
 stack.Pop();
 stack.Pop();
 
+#endregion
+
+#region SortedList
+SortedListSample SortedList = new SortedListSample();
+SortedList.Add(1, "1");
+SortedList.Add(2, "2");
+SortedList.Add(3, "3");
+SortedList.Add(4, "4");
 #endregion
 
 Console.ReadKey();
