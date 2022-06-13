@@ -2,6 +2,7 @@
 
 using Collections.Lists;
 using Collections.Queue;
+using Collections.Sets;
 using Collections.SortedList;
 using Collections.Stack;
 
@@ -83,6 +84,19 @@ SortedList.Add(1, "1");
 SortedList.Add(2, "2");
 SortedList.Add(3, "3");
 SortedList.Add(4, "4");
+Console.WriteLine("_".PadLeft(10, '_'));
+#endregion
+
+#region Set 
+SetSample setSample = new SetSample();
+setSample.Add("1");
+setSample.Add("2");
+setSample.Add("3");
+setSample.Add("3");
+setSample.Add("2");
+setSample.Print();
+Console.WriteLine("_".PadLeft(10), '_');
+setSample.Operators();
 #endregion
 
 Console.ReadKey();
