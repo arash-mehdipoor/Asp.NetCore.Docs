@@ -1,4 +1,6 @@
-﻿namespace Attribute.Domain.Models; 
+﻿using System.Diagnostics;
+
+namespace Attribute.Domain.Models; 
 
 public class PersonPrinter
 {
@@ -11,8 +13,26 @@ public class PersonPrinter
 
     public void Print()
     {
+        ShowDebugData();
         PrintAge();
         PerintFullName();
+    }
+
+    #region Description
+    /// <summary>
+    /// فقط در حال دیباگ اجرا می شود،به حروف بزرگ هم حساسه،
+    /// کاری که خود کامپایلر انجام میده اینه که،ببینید ممکنه جاهای مختلفی این کد نوشته شده باشه،و حالاکه ما بصورت
+    /// کاندیشنالی حذف کردیمش، اونجاهارو هم پیدا میکنه و حذف میکنه،
+    /// پس هم محل هایی که استفاده شده و هم خود تابع رو برای ما حرف میکنه،
+    /// تنظیماتشم میتونید انجام بدید و یه مد دیگه ای براش بنویسید
+    /// مسیر : Properies => Build => General => Conditinal compilation symbols
+    /// </summary> 
+    #endregion
+    //[Conditional("DEBUG")]
+    [Conditional("Arash")] // مسیر تنظیماتش هم توی دیسکریپشن بالا نوشته شده
+    private void ShowDebugData()
+    {
+        Console.WriteLine("This application compile in debug mode");
     }
 
     private void PerintFullName()
@@ -28,7 +48,7 @@ public class PersonPrinter
     /// کد رو درست نکرد خطا ببینه
     /// </summary> 
     #endregion
-    [Obsolete("message: Depricated Attribute")]
+    //[Obsolete("message: Depricated Attribute")]
     //[Obsolete("message for depricate",error:true)]
     private void PrintAge()
     {

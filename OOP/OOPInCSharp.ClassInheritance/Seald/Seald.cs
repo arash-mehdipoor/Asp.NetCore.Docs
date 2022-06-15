@@ -27,9 +27,10 @@
 
     }
 
-    public class Student : Teacher
-    {
+    // ارور میده
+    //public class Student : Teacher
+    //{
 
-    } 
+    //} 
     #endregion
 }
