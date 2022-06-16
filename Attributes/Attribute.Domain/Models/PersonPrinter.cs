@@ -1,8 +1,13 @@
-﻿using System.Diagnostics;
+﻿using Attributes.CustomAttributes;
+using System.Diagnostics;
 
-namespace Attribute.Domain.Models; 
+namespace Attribute.Domain.Models;
 
-public class PersonPrinter
+//میتونیم موقع استفاد کلمه اتریبیوت رو پاک کنیم
+// چون موقع تعریفش گفتیم در سطح اسملی پس اینجا ارور میده و باید در سطح اسمبلی فقط استفاده بشه
+//[AutoScanForDependencyAttribute()]
+//[AutoScanForDependency]
+ public class PersonPrinter
 {
     private readonly Person _person;
 

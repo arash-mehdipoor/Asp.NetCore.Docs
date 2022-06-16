@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Attribute.Domain\Attribute.Domain.csproj" />
+    <ProjectReference Include="..\Attribute.Domain\Attributes.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
-﻿ 
+﻿
 
+using Attributes.CustomAttributes;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 #region Description
@@ -11,5 +12,6 @@ using System.Runtime.CompilerServices;
 /// اینجا استفاده بکنید
 /// </summary> 
 #endregion 
-[assembly:AssemblyCopyright("My CopyRight")]
-[assembly:InternalsVisibleTo("Attribute.Core.Domain.Test")]
+[assembly: AssemblyCopyright("My CopyRight")]
+[assembly: InternalsVisibleTo("Attribute.Core.Domain.Test")]
+[assembly: AutoScanForDependency]
