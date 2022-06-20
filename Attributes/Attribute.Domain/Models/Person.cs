@@ -9,11 +9,21 @@ namespace Attribute.Domain.Models
     [CodeChangeHistory("Arash Mehdipour", false, Description = "Fix the bug...")]
     public class Person
     {
-        [CodeChangeHistory("Arash Mehdipour", false, Description = "Use attribute in code for property...")]  
-        public string FirstName { get; set; }
+        [CodeChangeHistory("Arash Mehdipour", false, Description = "Use attribute in code for property...")]
+        public string FirstName { get; set; } = "Arash";
 
-        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        public string LastName { get; set; }
-        public int Age { get; set; }
+        //[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        public string LastName { get; set; } = "Mehdipour";
+        public int Age { get; set; } = 29;
+
+        public void Print()
+        {
+            Console.WriteLine($"{FirstName} - {LastName}");
+        }
+
+        public void InputPrinter(string name)
+        {
+            Console.WriteLine($"my name is : {name}");
+        }
     }
 }
