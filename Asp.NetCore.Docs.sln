@@ -71,9 +71,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attributes.ReflectionUI", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attribute.DiscoveringMetadata", "Attributes\Attribute.DiscoveringMetadata\Attribute.DiscoveringMetadata.csproj", "{FFA7877E-B463-4FB9-95A1-E354C0C861B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes.LoadAssembly", "Attributes\Attributes.LoadAssembly\Attributes.LoadAssembly.csproj", "{F9FF461C-C931-472D-A8FB-3080875379F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attributes.LoadAssembly", "Attributes\Attributes.LoadAssembly\Attributes.LoadAssembly.csproj", "{F9FF461C-C931-472D-A8FB-3080875379F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes.LateBinding", "Attributes\Attributes.LateBinding\Attributes.LateBinding.csproj", "{7C95ABB2-76EE-470C-8506-D128961D6A23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attributes.LateBinding", "Attributes\Attributes.LateBinding\Attributes.LateBinding.csproj", "{7C95ABB2-76EE-470C-8506-D128961D6A23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Asp.NetCore", "Asp.NetCore", "{B92C4D4D-86A6-4F8A-9927-AF4B9733F4D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore", "Asp.NetCore\Asp.NetCore\Asp.NetCore.csproj", "{5308D74D-FD9E-4B36-8BBC-C9449E7BBF4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -173,6 +177,10 @@ Global
 		{7C95ABB2-76EE-470C-8506-D128961D6A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C95ABB2-76EE-470C-8506-D128961D6A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C95ABB2-76EE-470C-8506-D128961D6A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5308D74D-FD9E-4B36-8BBC-C9449E7BBF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5308D74D-FD9E-4B36-8BBC-C9449E7BBF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5308D74D-FD9E-4B36-8BBC-C9449E7BBF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5308D74D-FD9E-4B36-8BBC-C9449E7BBF4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -213,6 +221,8 @@ Global
 		{FFA7877E-B463-4FB9-95A1-E354C0C861B7} = {E8AABEA9-E42B-41F3-9694-AF3CAFD0FA7A}
 		{F9FF461C-C931-472D-A8FB-3080875379F8} = {E8AABEA9-E42B-41F3-9694-AF3CAFD0FA7A}
 		{7C95ABB2-76EE-470C-8506-D128961D6A23} = {E8AABEA9-E42B-41F3-9694-AF3CAFD0FA7A}
+		{B92C4D4D-86A6-4F8A-9927-AF4B9733F4D9} = {C36EFF5E-DDAA-447F-AD23-B0B30100A6A3}
+		{5308D74D-FD9E-4B36-8BBC-C9449E7BBF4F} = {B92C4D4D-86A6-4F8A-9927-AF4B9733F4D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D112FEE-2475-47B9-AF41-40BD664C443E}
